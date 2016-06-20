@@ -16,11 +16,17 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     cuenta.cpp \
     cuentapersonal.cpp \
-    ahorroh.cpp
+    ahorroh.cpp \
+    calculadora.cpp
 
 HEADERS  += mainwindow.h \
     cuenta.h \
     cuentapersonal.h \
-    ahorroh.h
+    ahorroh.h \
+    calculadora.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    calculadora.ui
+
+RESOURCES += \
+    assets.qrc

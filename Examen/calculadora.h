@@ -1,22 +1,22 @@
-#ifndef CALCULADORA_H
-#define CALCULADORA_H
+#ifndef NOTEPAD_H
+#define NOTEPAD_H
 
 #include <QMainWindow>
 
 namespace Ui {
-class Calculadora;
+class Notepad;
 }
 
-class Calculadora : public QMainWindow
+class Notepad : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    explicit Calculadora(QWidget *parent = 0);
-    ~Calculadora();
+    explicit Notepad(QWidget *parent = 0);
+    ~Notepad();
 
 private:
-    Ui::Calculadora *ui;
+    Ui::Notepad *ui;
 };
 
-#endif // CALCULADORA_H
+#endif // NOTEPAD_H

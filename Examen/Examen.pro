@@ -26,7 +26,7 @@ HEADERS  += mainwindow.h \
     calculadora.h
 
 FORMS    += mainwindow.ui \
-    calculadora.ui
+    notepad.ui
 
 RESOURCES += \
     assets.qrc

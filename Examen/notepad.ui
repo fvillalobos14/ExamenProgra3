@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Calculadora</class>
- <widget class="QMainWindow" name="Calculadora">
+ <class>Notepad</class>
+ <widget class="QMainWindow" name="Notepad">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -59,6 +59,7 @@
    <addaction name="actionCopy"/>
    <addaction name="actionPaste"/>
    <addaction name="actionCut"/>
+   <addaction name="actionGo_Back"/>
   </widget>
   <action name="actionOpen">
    <property name="icon">
@@ -79,6 +80,10 @@
    </property>
   </action>
   <action name="actionGo_Back">
+   <property name="icon">
+    <iconset resource="assets.qrc">
+     <normaloff>:/icons/back</normaloff>:/icons/back</iconset>
+   </property>
    <property name="text">
     <string>Go Back</string>
    </property>

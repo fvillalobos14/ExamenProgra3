@@ -1,14 +1,14 @@
-#include "calculadora.h"
-#include "ui_calculadora.h"
+#include "Notepad.h"
+#include "ui_Notepad.h"
 
-Calculadora::Calculadora(QWidget *parent) :
+Notepad::Notepad(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::Calculadora)
+    ui(new Ui::Notepad)
 {
     ui->setupUi(this);
 }
 
-Calculadora::~Calculadora()
+Notepad::~Notepad()
 {
     delete ui;
 }

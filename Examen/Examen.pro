@@ -23,7 +23,7 @@ HEADERS  += mainwindow.h \
     cuenta.h \
     cuentapersonal.h \
     ahorroh.h \
-    calculadora.h
+    notepad.h
 
 FORMS    += mainwindow.ui \
     notepad.ui

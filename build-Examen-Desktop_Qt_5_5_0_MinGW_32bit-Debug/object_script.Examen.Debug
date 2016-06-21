@@ -1,0 +1,14 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\cuenta.o
+./debug\cuentapersonal.o
+./debug\ahorroh.o
+./debug\configuracion.o
+./debug\configuracion2.o
+./debug\manejodecuentas.o
+./debug\moc_mainwindow.o
+./debug\moc_configuracion.o
+./debug\moc_configuracion2.o
+./debug\moc_manejodecuentas.o
+);

@@ -1,9 +1,8 @@
 #include "ahorroh.h"
 
-AhorroH::AhorroH(int n, string nom, string nomB, double sal)
+AhorroH::AhorroH(int n, string nomB, double sal)
 {
     numeroCuenta = n;
-    nombre = nom;
     nombreDelBanco = nomB;
     saldo = sal;
 }

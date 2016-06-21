@@ -8,4 +8,9 @@
         <file>paste.png</file>
         <file>save.png</file>
     </qresource>
+    <qresource prefix="/others">
+        <file>logo.png</file>
+        <file>Untitled-1.png</file>
+        <file>ola.png</file>
+    </qresource>
 </RCC>

@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "notepad.h"
+#include "simplecalculator.h"
 
 namespace Ui {
 class Principal;
@@ -15,6 +16,8 @@ class Principal : public QMainWindow
 public:
     explicit Principal(QWidget *parent = 0);
     Notepad npd;
+    SimpleCalculator sc;
+    double average(double first, double second, double third, double fourth);
     ~Principal();
 
 private slots:

@@ -98,15 +98,6 @@
     <string>Go Back</string>
    </property>
   </action>
-  <action name="actionExit">
-   <property name="icon">
-    <iconset resource="assets.qrc">
-     <normaloff>:/icons/exit.png</normaloff>:/icons/exit.png</iconset>
-   </property>
-   <property name="text">
-    <string>Exit</string>
-   </property>
-  </action>
   <action name="actionCopy">
    <property name="icon">
     <iconset resource="assets.qrc">
@@ -132,6 +123,15 @@
    </property>
    <property name="text">
     <string>Cut</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="assets.qrc">
+     <normaloff>:/icons/exit.png</normaloff>:/icons/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
    </property>
   </action>
  </widget>

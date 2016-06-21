@@ -50,15 +50,19 @@ OBJECTS_DIR   = ./
 
 SOURCES       = ../Exam/main.cpp \
 		../Exam/principal.cpp \
-		../Exam/notepad.cpp qrc_assets.cpp \
+		../Exam/notepad.cpp \
+		../Exam/simplecalculator.cpp qrc_assets.cpp \
 		moc_principal.cpp \
-		moc_notepad.cpp
+		moc_notepad.cpp \
+		moc_simplecalculator.cpp
 OBJECTS       = main.o \
 		principal.o \
 		notepad.o \
+		simplecalculator.o \
 		qrc_assets.o \
 		moc_principal.o \
-		moc_notepad.o
+		moc_notepad.o \
+		moc_simplecalculator.o
 DIST          = ../../../Qt5.5.1/5.5/clang_64/mkspecs/features/spec_pre.prf \
 		../../../Qt5.5.1/5.5/clang_64/mkspecs/qdevice.pri \
 		../../../Qt5.5.1/5.5/clang_64/mkspecs/features/device_config.prf \
@@ -180,6 +184,7 @@ DIST          = ../../../Qt5.5.1/5.5/clang_64/mkspecs/features/spec_pre.prf \
 		../../../Qt5.5.1/5.5/clang_64/mkspecs/features/qt_config.prf \
 		../../../Qt5.5.1/5.5/clang_64/mkspecs/macx-clang/qmake.conf \
 		../../../Qt5.5.1/5.5/clang_64/mkspecs/features/spec_post.prf \
+		../Exam/.qmake.stash \
 		../../../Qt5.5.1/5.5/clang_64/mkspecs/features/exclusive_builds.prf \
 		../../../Qt5.5.1/5.5/clang_64/mkspecs/features/default_pre.prf \
 		../../../Qt5.5.1/5.5/clang_64/mkspecs/features/mac/default_pre.prf \
@@ -201,9 +206,11 @@ DIST          = ../../../Qt5.5.1/5.5/clang_64/mkspecs/features/spec_pre.prf \
 		../../../Qt5.5.1/5.5/clang_64/mkspecs/features/yacc.prf \
 		../../../Qt5.5.1/5.5/clang_64/mkspecs/features/lex.prf \
 		../Exam/Exam.pro ../Exam/principal.h \
-		../Exam/notepad.h ../Exam/main.cpp \
+		../Exam/notepad.h \
+		../Exam/simplecalculator.h ../Exam/main.cpp \
 		../Exam/principal.cpp \
-		../Exam/notepad.cpp
+		../Exam/notepad.cpp \
+		../Exam/simplecalculator.cpp
 QMAKE_TARGET  = Exam
 DESTDIR       = #avoid trailing-slash linebreak
 TARGET        = Exam.app/Contents/MacOS/Exam
@@ -241,7 +248,7 @@ first: all
 
 ####### Build rules
 
-$(TARGET): ui_principal.h ui_notepad.h $(OBJECTS)  
+$(TARGET): ui_principal.h ui_notepad.h ui_simplecalculator.h $(OBJECTS)  
 	@test -d Exam.app/Contents/MacOS/ || mkdir -p Exam.app/Contents/MacOS/
 	$(LINK) $(LFLAGS) -o $(TARGET) $(OBJECTS) $(OBJCOMP) $(LIBS)
 
@@ -366,6 +373,7 @@ Makefile: ../Exam/Exam.pro ../../../Qt5.5.1/5.5/clang_64/mkspecs/macx-clang/qmak
 		../../../Qt5.5.1/5.5/clang_64/mkspecs/features/qt_config.prf \
 		../../../Qt5.5.1/5.5/clang_64/mkspecs/macx-clang/qmake.conf \
 		../../../Qt5.5.1/5.5/clang_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../../Qt5.5.1/5.5/clang_64/mkspecs/features/exclusive_builds.prf \
 		../../../Qt5.5.1/5.5/clang_64/mkspecs/features/default_pre.prf \
 		../../../Qt5.5.1/5.5/clang_64/mkspecs/features/mac/default_pre.prf \
@@ -513,6 +521,7 @@ Makefile: ../Exam/Exam.pro ../../../Qt5.5.1/5.5/clang_64/mkspecs/macx-clang/qmak
 ../../../Qt5.5.1/5.5/clang_64/mkspecs/features/qt_config.prf:
 ../../../Qt5.5.1/5.5/clang_64/mkspecs/macx-clang/qmake.conf:
 ../../../Qt5.5.1/5.5/clang_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 ../../../Qt5.5.1/5.5/clang_64/mkspecs/features/exclusive_builds.prf:
 ../../../Qt5.5.1/5.5/clang_64/mkspecs/features/default_pre.prf:
 ../../../Qt5.5.1/5.5/clang_64/mkspecs/features/mac/default_pre.prf:
@@ -568,9 +577,9 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents ../Exam/assets.qrc $(DISTDIR)/
-	$(COPY_FILE) --parents ../Exam/principal.h ../Exam/notepad.h $(DISTDIR)/
-	$(COPY_FILE) --parents ../Exam/main.cpp ../Exam/principal.cpp ../Exam/notepad.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents ../Exam/principal.ui ../Exam/notepad.ui $(DISTDIR)/
+	$(COPY_FILE) --parents ../Exam/principal.h ../Exam/notepad.h ../Exam/simplecalculator.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../Exam/main.cpp ../Exam/principal.cpp ../Exam/notepad.cpp ../Exam/simplecalculator.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../Exam/principal.ui ../Exam/notepad.ui ../Exam/simplecalculator.ui $(DISTDIR)/
 
 
 clean: compiler_clean 
@@ -604,14 +613,19 @@ qrc_assets.cpp: ../Exam/assets.qrc \
 		../Exam/back.png \
 		../Exam/exit.png \
 		../Exam/copy.png \
-		../Exam/paste.png
+		../Exam/paste.png \
+		../Exam/Untitled-1.png \
+		../Exam/logo.png \
+		../Exam/ola.png
 	/Users/Francis/Qt5.5.1/5.5/clang_64/bin/rcc -name assets ../Exam/assets.qrc -o qrc_assets.cpp
 
-compiler_moc_header_make_all: moc_principal.cpp moc_notepad.cpp
+compiler_moc_header_make_all: moc_principal.cpp moc_notepad.cpp moc_simplecalculator.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_principal.cpp moc_notepad.cpp
+	-$(DEL_FILE) moc_principal.cpp moc_notepad.cpp moc_simplecalculator.cpp
 moc_principal.cpp: ../../../Qt5.5.1/5.5/clang_64/lib/QtWidgets.framework/Headers/QMainWindow \
 		../../../Qt5.5.1/5.5/clang_64/lib/QtWidgets.framework/Headers/qmainwindow.h \
+		../Exam/notepad.h \
+		../Exam/simplecalculator.h \
 		../Exam/principal.h
 	/Users/Francis/Qt5.5.1/5.5/clang_64/bin/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -D__APPLE_CC__ -I/Users/Francis/Qt5.5.1/5.5/clang_64/mkspecs/macx-clang -I/Users/Francis/Documents/ExamenProgra3/Exam -I/Users/Francis/Qt5.5.1/5.5/clang_64/lib/QtWidgets.framework/Headers -I/Users/Francis/Qt5.5.1/5.5/clang_64/lib/QtGui.framework/Headers -I/Users/Francis/Qt5.5.1/5.5/clang_64/lib/QtCore.framework/Headers -I. -F/Users/Francis/Qt5.5.1/5.5/clang_64/lib ../Exam/principal.h -o moc_principal.cpp
 
@@ -620,16 +634,24 @@ moc_notepad.cpp: ../../../Qt5.5.1/5.5/clang_64/lib/QtWidgets.framework/Headers/Q
 		../Exam/notepad.h
 	/Users/Francis/Qt5.5.1/5.5/clang_64/bin/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -D__APPLE_CC__ -I/Users/Francis/Qt5.5.1/5.5/clang_64/mkspecs/macx-clang -I/Users/Francis/Documents/ExamenProgra3/Exam -I/Users/Francis/Qt5.5.1/5.5/clang_64/lib/QtWidgets.framework/Headers -I/Users/Francis/Qt5.5.1/5.5/clang_64/lib/QtGui.framework/Headers -I/Users/Francis/Qt5.5.1/5.5/clang_64/lib/QtCore.framework/Headers -I. -F/Users/Francis/Qt5.5.1/5.5/clang_64/lib ../Exam/notepad.h -o moc_notepad.cpp
 
+moc_simplecalculator.cpp: ../../../Qt5.5.1/5.5/clang_64/lib/QtWidgets.framework/Headers/QMainWindow \
+		../../../Qt5.5.1/5.5/clang_64/lib/QtWidgets.framework/Headers/qmainwindow.h \
+		../Exam/simplecalculator.h
+	/Users/Francis/Qt5.5.1/5.5/clang_64/bin/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -D__APPLE_CC__ -I/Users/Francis/Qt5.5.1/5.5/clang_64/mkspecs/macx-clang -I/Users/Francis/Documents/ExamenProgra3/Exam -I/Users/Francis/Qt5.5.1/5.5/clang_64/lib/QtWidgets.framework/Headers -I/Users/Francis/Qt5.5.1/5.5/clang_64/lib/QtGui.framework/Headers -I/Users/Francis/Qt5.5.1/5.5/clang_64/lib/QtCore.framework/Headers -I. -F/Users/Francis/Qt5.5.1/5.5/clang_64/lib ../Exam/simplecalculator.h -o moc_simplecalculator.cpp
+
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
-compiler_uic_make_all: ui_principal.h ui_notepad.h
+compiler_uic_make_all: ui_principal.h ui_notepad.h ui_simplecalculator.h
 compiler_uic_clean:
-	-$(DEL_FILE) ui_principal.h ui_notepad.h
+	-$(DEL_FILE) ui_principal.h ui_notepad.h ui_simplecalculator.h
 ui_principal.h: ../Exam/principal.ui
 	/Users/Francis/Qt5.5.1/5.5/clang_64/bin/uic ../Exam/principal.ui -o ui_principal.h
 
 ui_notepad.h: ../Exam/notepad.ui
 	/Users/Francis/Qt5.5.1/5.5/clang_64/bin/uic ../Exam/notepad.ui -o ui_notepad.h
+
+ui_simplecalculator.h: ../Exam/simplecalculator.ui
+	/Users/Francis/Qt5.5.1/5.5/clang_64/bin/uic ../Exam/simplecalculator.ui -o ui_simplecalculator.h
 
 compiler_rez_source_make_all:
 compiler_rez_source_clean:
@@ -647,6 +669,7 @@ main.o: ../Exam/main.cpp ../Exam/principal.h \
 		../../../Qt5.5.1/5.5/clang_64/lib/QtWidgets.framework/Headers/QMainWindow \
 		../../../Qt5.5.1/5.5/clang_64/lib/QtWidgets.framework/Headers/qmainwindow.h \
 		../Exam/notepad.h \
+		../Exam/simplecalculator.h \
 		../../../Qt5.5.1/5.5/clang_64/lib/QtWidgets.framework/Headers/QApplication \
 		../../../Qt5.5.1/5.5/clang_64/lib/QtWidgets.framework/Headers/qapplication.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../Exam/main.cpp
@@ -654,6 +677,8 @@ main.o: ../Exam/main.cpp ../Exam/principal.h \
 principal.o: ../Exam/principal.cpp ../Exam/principal.h \
 		../../../Qt5.5.1/5.5/clang_64/lib/QtWidgets.framework/Headers/QMainWindow \
 		../../../Qt5.5.1/5.5/clang_64/lib/QtWidgets.framework/Headers/qmainwindow.h \
+		../Exam/notepad.h \
+		../Exam/simplecalculator.h \
 		ui_principal.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o principal.o ../Exam/principal.cpp
 
@@ -671,6 +696,14 @@ notepad.o: ../Exam/notepad.cpp ../Exam/notepad.h \
 		../../../Qt5.5.1/5.5/clang_64/lib/QtCore.framework/Headers/qtextstream.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o notepad.o ../Exam/notepad.cpp
 
+simplecalculator.o: ../Exam/simplecalculator.cpp ../Exam/simplecalculator.h \
+		../../../Qt5.5.1/5.5/clang_64/lib/QtWidgets.framework/Headers/QMainWindow \
+		../../../Qt5.5.1/5.5/clang_64/lib/QtWidgets.framework/Headers/qmainwindow.h \
+		ui_simplecalculator.h \
+		../../../Qt5.5.1/5.5/clang_64/lib/QtWidgets.framework/Headers/QMessageBox \
+		../../../Qt5.5.1/5.5/clang_64/lib/QtWidgets.framework/Headers/qmessagebox.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o simplecalculator.o ../Exam/simplecalculator.cpp
+
 qrc_assets.o: qrc_assets.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qrc_assets.o qrc_assets.cpp
 
@@ -679,6 +712,9 @@ moc_principal.o: moc_principal.cpp
 
 moc_notepad.o: moc_notepad.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_notepad.o moc_notepad.cpp
+
+moc_simplecalculator.o: moc_simplecalculator.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_simplecalculator.o moc_simplecalculator.cpp
 
 ####### Install
 

@@ -20,7 +20,7 @@ void Principal::on_NotepadButton_clicked()
 
 void Principal::on_CalcButton_clicked()
 {
-
+    sc.show();
 }
 
 void Principal::on_BankButton_clicked()

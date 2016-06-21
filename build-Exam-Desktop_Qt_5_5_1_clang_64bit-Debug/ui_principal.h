@@ -14,6 +14,7 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
@@ -30,6 +31,7 @@ public:
     QPushButton *BankButton;
     QPushButton *NotepadButton;
     QPushButton *CalcButton;
+    QLabel *label;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -38,18 +40,22 @@ public:
     {
         if (Principal->objectName().isEmpty())
             Principal->setObjectName(QStringLiteral("Principal"));
-        Principal->resize(350, 430);
+        Principal->resize(350, 450);
         centralWidget = new QWidget(Principal);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         BankButton = new QPushButton(centralWidget);
         BankButton->setObjectName(QStringLiteral("BankButton"));
-        BankButton->setGeometry(QRect(90, 140, 171, 31));
+        BankButton->setGeometry(QRect(90, 180, 171, 31));
         NotepadButton = new QPushButton(centralWidget);
         NotepadButton->setObjectName(QStringLiteral("NotepadButton"));
-        NotepadButton->setGeometry(QRect(90, 210, 171, 31));
+        NotepadButton->setGeometry(QRect(90, 250, 171, 31));
         CalcButton = new QPushButton(centralWidget);
         CalcButton->setObjectName(QStringLiteral("CalcButton"));
-        CalcButton->setGeometry(QRect(90, 280, 171, 31));
+        CalcButton->setGeometry(QRect(90, 320, 171, 31));
+        label = new QLabel(centralWidget);
+        label->setObjectName(QStringLiteral("label"));
+        label->setGeometry(QRect(70, 20, 211, 141));
+        label->setPixmap(QPixmap(QString::fromUtf8(":/others/logo.png")));
         Principal->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(Principal);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -73,6 +79,7 @@ public:
         BankButton->setText(QApplication::translate("Principal", "Bank Account Manager", 0));
         NotepadButton->setText(QApplication::translate("Principal", "Notepad", 0));
         CalcButton->setText(QApplication::translate("Principal", "Calculator", 0));
+        label->setText(QString());
     } // retranslateUi
 
 };

@@ -71,7 +71,9 @@ void Notepad::on_actionCut_triggered()
     ui->plainTextEdit->cut();
 }
 
+
+
 void Notepad::on_actionExit_triggered()
 {
-    close();
+   QCoreApplication::quit();
 }

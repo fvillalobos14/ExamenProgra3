@@ -14,13 +14,16 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         principal.cpp \
-    notepad.cpp
+    notepad.cpp \
+    simplecalculator.cpp
 
 HEADERS  += principal.h \
-    notepad.h
+    notepad.h \
+    simplecalculator.h
 
 FORMS    += principal.ui \
-    notepad.ui
+    notepad.ui \
+    simplecalculator.ui
 
 RESOURCES += \
     assets.qrc

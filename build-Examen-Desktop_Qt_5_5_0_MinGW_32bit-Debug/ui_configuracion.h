@@ -36,31 +36,31 @@ public:
     {
         if (Configuracion->objectName().isEmpty())
             Configuracion->setObjectName(QStringLiteral("Configuracion"));
-        Configuracion->resize(700, 500);
+        Configuracion->resize(467, 445);
         banknamelbl = new QLabel(Configuracion);
         banknamelbl->setObjectName(QStringLiteral("banknamelbl"));
-        banknamelbl->setGeometry(QRect(230, 50, 251, 20));
+        banknamelbl->setGeometry(QRect(100, 40, 251, 20));
         banknamelbl->setAlignment(Qt::AlignCenter);
         banknamefield = new QLineEdit(Configuracion);
         banknamefield->setObjectName(QStringLiteral("banknamefield"));
-        banknamefield->setGeometry(QRect(230, 70, 251, 20));
+        banknamefield->setGeometry(QRect(100, 60, 251, 20));
         accountnamefield = new QLineEdit(Configuracion);
         accountnamefield->setObjectName(QStringLiteral("accountnamefield"));
-        accountnamefield->setGeometry(QRect(230, 160, 251, 20));
+        accountnamefield->setGeometry(QRect(100, 150, 251, 20));
         accountnamelbl = new QLabel(Configuracion);
         accountnamelbl->setObjectName(QStringLiteral("accountnamelbl"));
-        accountnamelbl->setGeometry(QRect(230, 140, 251, 20));
+        accountnamelbl->setGeometry(QRect(100, 130, 251, 20));
         accountnamelbl->setAlignment(Qt::AlignCenter);
         accountbalancelbl = new QLabel(Configuracion);
         accountbalancelbl->setObjectName(QStringLiteral("accountbalancelbl"));
-        accountbalancelbl->setGeometry(QRect(230, 230, 251, 20));
+        accountbalancelbl->setGeometry(QRect(100, 220, 251, 20));
         accountbalancelbl->setAlignment(Qt::AlignCenter);
         balancefield = new QLineEdit(Configuracion);
         balancefield->setObjectName(QStringLiteral("balancefield"));
-        balancefield->setGeometry(QRect(230, 250, 251, 20));
+        balancefield->setGeometry(QRect(100, 240, 251, 20));
         start = new QPushButton(Configuracion);
         start->setObjectName(QStringLiteral("start"));
-        start->setGeometry(QRect(230, 370, 251, 23));
+        start->setGeometry(QRect(100, 360, 251, 23));
 
         retranslateUi(Configuracion);
 

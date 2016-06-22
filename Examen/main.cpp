@@ -1,4 +1,5 @@
 #include "mainwindow.h"
+#include "principal.h"
 #include <QApplication>
 #include "cuenta.h"
 #include "ahorroh.h"
@@ -16,7 +17,7 @@ int main(int argc, char *argv[])
     cp->retirar(1800);
 
     QApplication a(argc, argv);
-    MainWindow w;
+    Principal w;
     w.show();
 
     return a.exec();

@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>Untitled-1.png</file>
+        <file>paste.png</file>
+        <file>open.png</file>
+        <file>logo.png</file>
+        <file>exit.png</file>
+        <file>cut.png</file>
+        <file>copy.png</file>
+        <file>back.png</file>
+        <file>save.png</file>
+        <file>v2.png</file>
+        <file>icap-bg.jpg</file>
+        <file>hello1.png</file>
+    </qresource>
+</RCC>

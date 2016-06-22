@@ -7,8 +7,17 @@ INPUT(
 ./release\configuracion.o
 ./release\configuracion2.o
 ./release\manejodecuentas.o
+./release\calc.o
+./release\simplecalculator.o
+./release\principal.o
+./release\notepad.o
+./release\qrc_resources.o
 ./release\moc_mainwindow.o
 ./release\moc_configuracion.o
 ./release\moc_configuracion2.o
 ./release\moc_manejodecuentas.o
+./release\moc_calc.o
+./release\moc_simplecalculator.o
+./release\moc_principal.o
+./release\moc_notepad.o
 );

@@ -36,31 +36,31 @@ public:
     {
         if (configuracion2->objectName().isEmpty())
             configuracion2->setObjectName(QStringLiteral("configuracion2"));
-        configuracion2->resize(700, 500);
+        configuracion2->resize(396, 412);
         accountbalancelbl = new QLabel(configuracion2);
         accountbalancelbl->setObjectName(QStringLiteral("accountbalancelbl"));
-        accountbalancelbl->setGeometry(QRect(230, 230, 251, 20));
+        accountbalancelbl->setGeometry(QRect(70, 210, 251, 20));
         accountbalancelbl->setAlignment(Qt::AlignCenter);
         start = new QPushButton(configuracion2);
         start->setObjectName(QStringLiteral("start"));
-        start->setGeometry(QRect(230, 370, 251, 23));
+        start->setGeometry(QRect(70, 310, 251, 23));
         accountnamefield = new QLineEdit(configuracion2);
         accountnamefield->setObjectName(QStringLiteral("accountnamefield"));
-        accountnamefield->setGeometry(QRect(230, 160, 251, 20));
+        accountnamefield->setGeometry(QRect(70, 140, 251, 20));
         balancefield = new QLineEdit(configuracion2);
         balancefield->setObjectName(QStringLiteral("balancefield"));
-        balancefield->setGeometry(QRect(230, 250, 251, 20));
+        balancefield->setGeometry(QRect(70, 230, 251, 20));
         banknamelbl = new QLabel(configuracion2);
         banknamelbl->setObjectName(QStringLiteral("banknamelbl"));
-        banknamelbl->setGeometry(QRect(230, 50, 251, 20));
+        banknamelbl->setGeometry(QRect(70, 30, 251, 20));
         banknamelbl->setAlignment(Qt::AlignCenter);
         accountnamelbl = new QLabel(configuracion2);
         accountnamelbl->setObjectName(QStringLiteral("accountnamelbl"));
-        accountnamelbl->setGeometry(QRect(230, 140, 251, 20));
+        accountnamelbl->setGeometry(QRect(70, 120, 251, 20));
         accountnamelbl->setAlignment(Qt::AlignCenter);
         banknamefield = new QLineEdit(configuracion2);
         banknamefield->setObjectName(QStringLiteral("banknamefield"));
-        banknamefield->setGeometry(QRect(230, 70, 251, 20));
+        banknamefield->setGeometry(QRect(70, 50, 251, 20));
 
         retranslateUi(configuracion2);
 

@@ -14,6 +14,7 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
@@ -29,7 +30,8 @@ public:
     QWidget *centralWidget;
     QPushButton *personal;
     QPushButton *hijos;
-    QPushButton *personal_2;
+    QPushButton *pushButton;
+    QLabel *label;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -38,22 +40,27 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(700, 500);
+        MainWindow->resize(380, 404);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         personal = new QPushButton(centralWidget);
         personal->setObjectName(QStringLiteral("personal"));
-        personal->setGeometry(QRect(280, 180, 151, 23));
+        personal->setGeometry(QRect(110, 160, 151, 23));
         hijos = new QPushButton(centralWidget);
         hijos->setObjectName(QStringLiteral("hijos"));
-        hijos->setGeometry(QRect(280, 260, 151, 23));
-        personal_2 = new QPushButton(centralWidget);
-        personal_2->setObjectName(QStringLiteral("personal_2"));
-        personal_2->setGeometry(QRect(280, 340, 151, 23));
+        hijos->setGeometry(QRect(110, 220, 151, 23));
+        pushButton = new QPushButton(centralWidget);
+        pushButton->setObjectName(QStringLiteral("pushButton"));
+        pushButton->setGeometry(QRect(110, 280, 151, 23));
+        label = new QLabel(centralWidget);
+        label->setObjectName(QStringLiteral("label"));
+        label->setGeometry(QRect(0, 30, 431, 111));
+        label->setPixmap(QPixmap(QString::fromUtf8(":/icons/hello1.png")));
+        label->setScaledContents(false);
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 700, 21));
+        menuBar->setGeometry(QRect(0, 0, 380, 21));
         MainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -72,7 +79,8 @@ public:
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0));
         personal->setText(QApplication::translate("MainWindow", "Personal Account", 0));
         hijos->setText(QApplication::translate("MainWindow", "Child Account", 0));
-        personal_2->setText(QApplication::translate("MainWindow", "Cambios en Cuentas", 0));
+        pushButton->setText(QApplication::translate("MainWindow", "Manage Accounts", 0));
+        label->setText(QString());
     } // retranslateUi
 
 };

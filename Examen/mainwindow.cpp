@@ -31,9 +31,11 @@ void MainWindow::on_hijos_clicked()
     config.exec();
 }
 
-void MainWindow::on_personal_2_clicked()
+
+void MainWindow::on_pushButton_clicked()
 {
-    ManejodeCuentas manejo;
-    manejo.setModal(true);
-    manejo.exec();
+     ManejodeCuentas manejo;
+     manejo.setModal(true);
+     manejo.exec();
+
 }

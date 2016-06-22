@@ -15,7 +15,7 @@ Configuracion::~Configuracion()
 
 void Configuracion::on_start_clicked()
 {
-    ManejodeCuentas *manejos = new ManejodeCuentas();
+    ManejodeCuentas manejos;
     QString bankName = ui->banknamefield->text();
     QString accountNumber = ui->accountnamefield->text();
     QString balance =ui->balancefield->text();
@@ -29,7 +29,9 @@ void Configuracion::on_start_clicked()
     cout<<bint<<endl;
 
     CuentaPersonal cuentaNueva(aint,bnstring,bint);
-    manejos->addCuentaPersonal(cuentaNueva,0);
+    manejos.addCuentaPersonal(cuentaNueva,0);
+
+
 
     ui->balancefield->clear();
     ui->banknamefield->clear();

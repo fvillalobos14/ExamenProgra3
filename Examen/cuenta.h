@@ -8,10 +8,11 @@ using namespace std;
 class Cuenta{
 protected:
     int numeroCuenta;
-    string nombre, nombreDelBanco;
+    string nombreDelBanco, nombre;
     double saldo;
 public:
     Cuenta();
+    string getNombre();
     double getSaldo();
     void setSaldo(double);
     void depositar(double);

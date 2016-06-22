@@ -1,9 +1,8 @@
 #include "cuentapersonal.h"
 
-CuentaPersonal::CuentaPersonal(int n, string nom, string nomB, double sal)
+CuentaPersonal::CuentaPersonal(int n, string nomB, double sal)
 {
     this->numeroCuenta = n;
-    this->nombre = nom;
     this->nombreDelBanco = nomB;
     this->saldo = sal;
 }

@@ -22,4 +22,7 @@ void Cuenta::retirar(double money){
     saldo-=money;
     cout<<"Saldo de una Cuenta Padre: "<<saldo<<endl;
 }
+string Cuenta::getNombre(){
+    return nombre;
+}
 

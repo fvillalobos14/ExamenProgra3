@@ -16,11 +16,35 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     cuenta.cpp \
     cuentapersonal.cpp \
-    ahorroh.cpp
+    ahorroh.cpp \
+    configuracion.cpp \
+    configuracion2.cpp \
+    manejodecuentas.cpp \
+    calc.cpp \
+    simplecalculator.cpp \
+    principal.cpp \
+    notepad.cpp
 
 HEADERS  += mainwindow.h \
     cuenta.h \
     cuentapersonal.h \
-    ahorroh.h
+    ahorroh.h \
+    configuracion.h \
+    configuracion2.h \
+    manejodecuentas.h \
+    calc.h \
+    simplecalculator.h \
+    principal.h \
+    notepad.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    configuracion.ui \
+    configuracion2.ui \
+    manejodecuentas.ui \
+    calc.ui \
+    simplecalculator.ui \
+    principal.ui \
+    notepad.ui
+
+RESOURCES += \
+    resources.qrc

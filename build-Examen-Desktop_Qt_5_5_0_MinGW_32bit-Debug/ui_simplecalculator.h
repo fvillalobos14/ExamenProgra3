@@ -88,7 +88,7 @@ public:
         Result->setAlignment(Qt::AlignCenter);
         SumButton = new QPushButton(centralwidget);
         SumButton->setObjectName(QStringLiteral("SumButton"));
-        SumButton->setGeometry(QRect(40, 270, 81, 32));
+        SumButton->setGeometry(QRect(20, 270, 111, 32));
         MinusButton = new QPushButton(centralwidget);
         MinusButton->setObjectName(QStringLiteral("MinusButton"));
         MinusButton->setGeometry(QRect(20, 310, 115, 32));
@@ -117,7 +117,7 @@ public:
         SimpleCalculator->setCentralWidget(centralwidget);
         menubar = new QMenuBar(SimpleCalculator);
         menubar->setObjectName(QStringLiteral("menubar"));
-        menubar->setGeometry(QRect(0, 0, 407, 22));
+        menubar->setGeometry(QRect(0, 0, 407, 21));
         menuQuick_Calculator = new QMenu(menubar);
         menuQuick_Calculator->setObjectName(QStringLiteral("menuQuick_Calculator"));
         menuAbout = new QMenu(menubar);

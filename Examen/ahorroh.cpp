@@ -7,6 +7,6 @@ AhorroH::AhorroH(int n, string nomB, double sal)
     saldo = sal;
 }
 
-void AhorroH::retirar(){
-    cout<<"Esta funcion no es aplicable en esta cuenta."<<endl;
+void AhorroH::retirar(double){;
+    //QMessageBox::information(this,"Reminder","Your child's account is just for savings");
 }

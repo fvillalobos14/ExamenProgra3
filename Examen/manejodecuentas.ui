@@ -23,7 +23,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Deposit</string>
+    <string>Money Entrance</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -81,7 +81,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Withdraw</string>
+    <string>Money Exit</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -128,7 +128,7 @@
     </font>
    </property>
    <property name="text">
-    <string/>
+    <string>L.0.00</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_6">
@@ -162,7 +162,7 @@
     </font>
    </property>
    <property name="text">
-    <string/>
+    <string>L.0.00</string>
    </property>
   </widget>
   <widget class="QPushButton" name="depositar">
@@ -189,19 +189,6 @@
    </property>
    <property name="text">
     <string>Withdraw</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_7">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>-10</y>
-     <width>811</width>
-     <height>511</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
    </property>
   </widget>
  </widget>

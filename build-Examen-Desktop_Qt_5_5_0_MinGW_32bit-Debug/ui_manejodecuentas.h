@@ -36,7 +36,6 @@ public:
     QLabel *saldoactualhijo;
     QPushButton *depositar;
     QPushButton *retirar;
-    QLabel *label_7;
 
     void setupUi(QDialog *ManejodeCuentas)
     {
@@ -89,9 +88,6 @@ public:
         retirar = new QPushButton(ManejodeCuentas);
         retirar->setObjectName(QStringLiteral("retirar"));
         retirar->setGeometry(QRect(150, 290, 75, 23));
-        label_7 = new QLabel(ManejodeCuentas);
-        label_7->setObjectName(QStringLiteral("label_7"));
-        label_7->setGeometry(QRect(0, -10, 811, 511));
 
         retranslateUi(ManejodeCuentas);
 
@@ -101,17 +97,16 @@ public:
     void retranslateUi(QDialog *ManejodeCuentas)
     {
         ManejodeCuentas->setWindowTitle(QApplication::translate("ManejodeCuentas", "Dialog", 0));
-        label->setText(QApplication::translate("ManejodeCuentas", "Deposit", 0));
+        label->setText(QApplication::translate("ManejodeCuentas", "Money Entrance", 0));
         label_2->setText(QApplication::translate("ManejodeCuentas", "Amount:", 0));
         label_3->setText(QApplication::translate("ManejodeCuentas", "Amount:", 0));
-        label_4->setText(QApplication::translate("ManejodeCuentas", "Withdraw", 0));
+        label_4->setText(QApplication::translate("ManejodeCuentas", "Money Exit", 0));
         label_5->setText(QApplication::translate("ManejodeCuentas", "Current Balance (Personal Account)", 0));
-        saldoactualpersonal->setText(QString());
+        saldoactualpersonal->setText(QApplication::translate("ManejodeCuentas", "L.0.00", 0));
         label_6->setText(QApplication::translate("ManejodeCuentas", "Current Balance (Child Account)", 0));
-        saldoactualhijo->setText(QString());
+        saldoactualhijo->setText(QApplication::translate("ManejodeCuentas", "L.0.00", 0));
         depositar->setText(QApplication::translate("ManejodeCuentas", "Deposit", 0));
         retirar->setText(QApplication::translate("ManejodeCuentas", "Withdraw", 0));
-        label_7->setText(QString());
     } // retranslateUi
 
 };

@@ -16,7 +16,7 @@ public:
     double getSaldo();
     void setSaldo(double);
     void depositar(double);
-    virtual void retirar(double);
+    virtual void retirar(double) = 0;
 };
 
 #endif // CUENTA_H

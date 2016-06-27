@@ -26,3 +26,11 @@ string Cuenta::getNombre(){
     return nombre;
 }
 
+string Cuenta::getNombreBanco(){
+    return nombreDelBanco;
+}
+
+int Cuenta::getCuenta(){
+    return numeroCuenta;
+}
+

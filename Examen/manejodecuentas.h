@@ -4,6 +4,7 @@
 #include <QDialog>
 #include "ahorroh.h"
 #include "cuentapersonal.h"
+#include <fstream>
 
 namespace Ui {
 class ManejodeCuentas;
@@ -15,8 +16,10 @@ class ManejodeCuentas : public QDialog
 
 public:
     explicit ManejodeCuentas(QWidget *parent = 0);
-    void addCuentaPersonal(CuentaPersonal cp, int pos);
+    void addCuentaPersonal(CuentaPersonal cp);
     void addCuentaHijos(AhorroH ahorro);
+    CuentaPersonal *leerCuentaPersonal();
+    AhorroH *leerCuentaHijo();
     ~ManejodeCuentas();
 
 private:

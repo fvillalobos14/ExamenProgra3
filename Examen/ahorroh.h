@@ -8,7 +8,7 @@ using namespace std;
 
 class AhorroH : public Cuenta{
 public:
-    AhorroH(int, string, double);
+    AhorroH(int, string,string, double);
     void retirar(double);
 };
 

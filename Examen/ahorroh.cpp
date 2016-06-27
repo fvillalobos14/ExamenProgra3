@@ -1,10 +1,11 @@
 #include "ahorroh.h"
 
-AhorroH::AhorroH(int n, string nomB, double sal)
+AhorroH::AhorroH(int n, string nomB, string nom, double sal)
 {
     numeroCuenta = n;
     nombreDelBanco = nomB;
     saldo = sal;
+    nombre = nom;
 }
 
 void AhorroH::retirar(double){;

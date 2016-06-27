@@ -7,17 +7,69 @@
     <x>0</x>
     <y>0</y>
     <width>396</width>
-    <height>412</height>
+    <height>445</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <widget class="QLineEdit" name="balancefield">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>240</y>
+     <width>251</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="banknamefield">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>100</y>
+     <width>251</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="accountnamefield">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>170</y>
+     <width>251</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="accountnamelbl">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>150</y>
+     <width>251</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>If you wish, include an account number</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
   <widget class="QLabel" name="accountbalancelbl">
    <property name="geometry">
     <rect>
      <x>70</x>
-     <y>210</y>
+     <y>220</y>
      <width>251</width>
      <height>20</height>
     </rect>
@@ -29,11 +81,27 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
+  <widget class="QLabel" name="banknamelbl">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>80</y>
+     <width>251</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Which bank does your account belong to?</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
   <widget class="QPushButton" name="start">
    <property name="geometry">
     <rect>
      <x>70</x>
-     <y>310</y>
+     <y>370</y>
      <width>251</width>
      <height>23</height>
     </rect>
@@ -42,11 +110,11 @@
     <string>Start a correct finance management</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="accountnamefield">
+  <widget class="QLineEdit" name="namefield">
    <property name="geometry">
     <rect>
      <x>70</x>
-     <y>140</y>
+     <y>310</y>
      <width>251</width>
      <height>20</height>
     </rect>
@@ -55,59 +123,20 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLineEdit" name="balancefield">
+  <widget class="QLabel" name="accountbalancelbl_2">
    <property name="geometry">
     <rect>
      <x>70</x>
-     <y>230</y>
+     <y>290</y>
      <width>251</width>
      <height>20</height>
     </rect>
    </property>
    <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QLabel" name="banknamelbl">
-   <property name="geometry">
-    <rect>
-     <x>70</x>
-     <y>30</y>
-     <width>251</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Which bank does the account belong to?</string>
+    <string>Who is the owner of the account?</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QLabel" name="accountnamelbl">
-   <property name="geometry">
-    <rect>
-     <x>70</x>
-     <y>120</y>
-     <width>251</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>If you wish, include the account number</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="banknamefield">
-   <property name="geometry">
-    <rect>
-     <x>70</x>
-     <y>50</y>
-     <width>251</width>
-     <height>20</height>
-    </rect>
    </property>
   </widget>
  </widget>

@@ -22,6 +22,13 @@ public:
     AhorroH *leerCuentaHijo();
     ~ManejodeCuentas();
 
+private slots:
+    void on_depositar_clicked();
+
+    void on_depositar2_clicked();
+
+    void on_retirar_clicked();
+
 private:
     Ui::ManejodeCuentas *ui;
     CuentaPersonal *cuentasPersonales;

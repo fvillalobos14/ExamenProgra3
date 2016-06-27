@@ -14,6 +14,15 @@ SimpleCalculator::~SimpleCalculator()
     delete ui;
 }
 
+double SimpleCalculator:: factorial(double n)
+{
+    //double factorial;
+    if (n==0)
+        return 1;
+    else
+         return n*(factorial(n-1));
+}
+
 void SimpleCalculator::on_SumButton_clicked()
 {
     double first, second ,third, fourth, result;
@@ -202,4 +211,13 @@ void SimpleCalculator::on_actionGo_Back_triggered()
 void SimpleCalculator::on_actionExit_triggered()
 {
      QCoreApplication::quit();
+}
+
+void SimpleCalculator::on_AverageButton_2_clicked()
+{
+    QString valor1 = ui->firstEdit->text();
+    double v1 = valor1.split(" ")[0].toDouble();
+    double factorialn = factorial(v1);
+    QString factResult = QString::number(factorialn);
+    ui->Result->setText(factResult);
 }

@@ -38,6 +38,8 @@ private slots:
 
     void on_actionExit_triggered();
 
+    void on_AverageButton_2_clicked();
+
 private:
     Ui::SimpleCalculator *ui;
 };

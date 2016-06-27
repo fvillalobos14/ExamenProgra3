@@ -37,27 +37,33 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>47</x>
       <y>30</y>
-      <width>91</width>
+      <width>113</width>
       <height>16</height>
      </rect>
     </property>
     <property name="text">
      <string>First Value</string>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
    </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>250</x>
+      <x>237</x>
       <y>30</y>
-      <width>91</width>
+      <width>113</width>
       <height>20</height>
      </rect>
     </property>
     <property name="text">
      <string>Second Value</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
@@ -94,7 +100,7 @@
      <rect>
       <x>20</x>
       <y>270</y>
-      <width>111</width>
+      <width>115</width>
       <height>32</height>
      </rect>
     </property>
@@ -147,8 +153,8 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>290</y>
+      <x>260</x>
+      <y>270</y>
       <width>115</width>
       <height>32</height>
      </rect>
@@ -160,33 +166,39 @@
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>73</x>
+      <x>47</x>
       <y>100</y>
-      <width>91</width>
+      <width>113</width>
       <height>16</height>
      </rect>
     </property>
     <property name="text">
      <string>Third Value</string>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
    </widget>
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>253</x>
+      <x>237</x>
       <y>100</y>
-      <width>91</width>
+      <width>113</width>
       <height>20</height>
      </rect>
     </property>
     <property name="text">
      <string>Fourth Value</string>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
    </widget>
    <widget class="QLineEdit" name="fourthEdit">
     <property name="geometry">
      <rect>
-      <x>240</x>
+      <x>237</x>
       <y>130</y>
       <width>113</width>
       <height>21</height>
@@ -196,7 +208,7 @@
    <widget class="QLineEdit" name="thirdEdit">
     <property name="geometry">
      <rect>
-      <x>50</x>
+      <x>47</x>
       <y>130</y>
       <width>113</width>
       <height>21</height>

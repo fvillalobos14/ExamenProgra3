@@ -16,9 +16,9 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>-160</x>
-     <y>30</y>
-     <width>701</width>
+     <x>122</x>
+     <y>40</y>
+     <width>141</width>
      <height>20</height>
     </rect>
    </property>
@@ -32,9 +32,9 @@
   <widget class="QLineEdit" name="montofield">
    <property name="geometry">
     <rect>
-     <x>130</x>
+     <x>122</x>
      <y>90</y>
-     <width>113</width>
+     <width>141</width>
      <height>20</height>
     </rect>
    </property>
@@ -42,9 +42,9 @@
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>-160</x>
-     <y>60</y>
-     <width>701</width>
+     <x>122</x>
+     <y>70</y>
+     <width>141</width>
      <height>20</height>
     </rect>
    </property>
@@ -58,9 +58,9 @@
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>-160</x>
-     <y>230</y>
-     <width>701</width>
+     <x>122</x>
+     <y>220</y>
+     <width>141</width>
      <height>20</height>
     </rect>
    </property>
@@ -74,9 +74,9 @@
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>-160</x>
-     <y>200</y>
-     <width>701</width>
+     <x>122</x>
+     <y>190</y>
+     <width>141</width>
      <height>20</height>
     </rect>
    </property>
@@ -90,9 +90,9 @@
   <widget class="QLineEdit" name="retmontofield">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>260</y>
-     <width>113</width>
+     <x>122</x>
+     <y>240</y>
+     <width>141</width>
      <height>20</height>
     </rect>
    </property>
@@ -100,9 +100,9 @@
   <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
-     <x>-160</x>
-     <y>340</y>
-     <width>701</width>
+     <x>102</x>
+     <y>310</y>
+     <width>181</width>
      <height>20</height>
     </rect>
    </property>
@@ -116,10 +116,10 @@
   <widget class="QLabel" name="saldoactualpersonal">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>370</y>
-     <width>111</width>
-     <height>16</height>
+     <x>102</x>
+     <y>340</y>
+     <width>181</width>
+     <height>20</height>
     </rect>
    </property>
    <property name="font">
@@ -130,13 +130,16 @@
    <property name="text">
     <string>L.0.00</string>
    </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
   </widget>
   <widget class="QLabel" name="label_6">
    <property name="geometry">
     <rect>
-     <x>-160</x>
-     <y>390</y>
-     <width>701</width>
+     <x>102</x>
+     <y>380</y>
+     <width>181</width>
      <height>20</height>
     </rect>
    </property>
@@ -150,9 +153,9 @@
   <widget class="QLabel" name="saldoactualhijo">
    <property name="geometry">
     <rect>
-     <x>130</x>
+     <x>102</x>
      <y>420</y>
-     <width>111</width>
+     <width>181</width>
      <height>16</height>
     </rect>
    </property>
@@ -164,31 +167,47 @@
    <property name="text">
     <string>L.0.00</string>
    </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
   </widget>
   <widget class="QPushButton" name="depositar">
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>130</y>
-     <width>75</width>
+     <x>122</x>
+     <y>120</y>
+     <width>141</width>
      <height>23</height>
     </rect>
    </property>
    <property name="text">
-    <string>Deposit</string>
+    <string>Deposit in Personal Account</string>
    </property>
   </widget>
   <widget class="QPushButton" name="retirar">
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>290</y>
-     <width>75</width>
+     <x>122</x>
+     <y>270</y>
+     <width>141</width>
      <height>23</height>
     </rect>
    </property>
    <property name="text">
     <string>Withdraw</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="depositar2">
+   <property name="geometry">
+    <rect>
+     <x>122</x>
+     <y>150</y>
+     <width>141</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Deposit in Child Account</string>
    </property>
   </widget>
  </widget>

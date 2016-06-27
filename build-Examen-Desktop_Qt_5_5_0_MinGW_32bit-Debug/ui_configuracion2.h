@@ -24,43 +24,52 @@ QT_BEGIN_NAMESPACE
 class Ui_configuracion2
 {
 public:
-    QLabel *accountbalancelbl;
-    QPushButton *start;
-    QLineEdit *accountnamefield;
     QLineEdit *balancefield;
-    QLabel *banknamelbl;
-    QLabel *accountnamelbl;
     QLineEdit *banknamefield;
+    QLineEdit *accountnamefield;
+    QLabel *accountnamelbl;
+    QLabel *accountbalancelbl;
+    QLabel *banknamelbl;
+    QPushButton *start;
+    QLineEdit *namefield;
+    QLabel *accountbalancelbl_2;
 
     void setupUi(QDialog *configuracion2)
     {
         if (configuracion2->objectName().isEmpty())
             configuracion2->setObjectName(QStringLiteral("configuracion2"));
-        configuracion2->resize(396, 412);
-        accountbalancelbl = new QLabel(configuracion2);
-        accountbalancelbl->setObjectName(QStringLiteral("accountbalancelbl"));
-        accountbalancelbl->setGeometry(QRect(70, 210, 251, 20));
-        accountbalancelbl->setAlignment(Qt::AlignCenter);
-        start = new QPushButton(configuracion2);
-        start->setObjectName(QStringLiteral("start"));
-        start->setGeometry(QRect(70, 310, 251, 23));
-        accountnamefield = new QLineEdit(configuracion2);
-        accountnamefield->setObjectName(QStringLiteral("accountnamefield"));
-        accountnamefield->setGeometry(QRect(70, 140, 251, 20));
+        configuracion2->resize(396, 445);
         balancefield = new QLineEdit(configuracion2);
         balancefield->setObjectName(QStringLiteral("balancefield"));
-        balancefield->setGeometry(QRect(70, 230, 251, 20));
-        banknamelbl = new QLabel(configuracion2);
-        banknamelbl->setObjectName(QStringLiteral("banknamelbl"));
-        banknamelbl->setGeometry(QRect(70, 30, 251, 20));
-        banknamelbl->setAlignment(Qt::AlignCenter);
-        accountnamelbl = new QLabel(configuracion2);
-        accountnamelbl->setObjectName(QStringLiteral("accountnamelbl"));
-        accountnamelbl->setGeometry(QRect(70, 120, 251, 20));
-        accountnamelbl->setAlignment(Qt::AlignCenter);
+        balancefield->setGeometry(QRect(70, 240, 251, 20));
         banknamefield = new QLineEdit(configuracion2);
         banknamefield->setObjectName(QStringLiteral("banknamefield"));
-        banknamefield->setGeometry(QRect(70, 50, 251, 20));
+        banknamefield->setGeometry(QRect(70, 100, 251, 20));
+        accountnamefield = new QLineEdit(configuracion2);
+        accountnamefield->setObjectName(QStringLiteral("accountnamefield"));
+        accountnamefield->setGeometry(QRect(70, 170, 251, 20));
+        accountnamelbl = new QLabel(configuracion2);
+        accountnamelbl->setObjectName(QStringLiteral("accountnamelbl"));
+        accountnamelbl->setGeometry(QRect(70, 150, 251, 20));
+        accountnamelbl->setAlignment(Qt::AlignCenter);
+        accountbalancelbl = new QLabel(configuracion2);
+        accountbalancelbl->setObjectName(QStringLiteral("accountbalancelbl"));
+        accountbalancelbl->setGeometry(QRect(70, 220, 251, 20));
+        accountbalancelbl->setAlignment(Qt::AlignCenter);
+        banknamelbl = new QLabel(configuracion2);
+        banknamelbl->setObjectName(QStringLiteral("banknamelbl"));
+        banknamelbl->setGeometry(QRect(70, 80, 251, 20));
+        banknamelbl->setAlignment(Qt::AlignCenter);
+        start = new QPushButton(configuracion2);
+        start->setObjectName(QStringLiteral("start"));
+        start->setGeometry(QRect(70, 370, 251, 23));
+        namefield = new QLineEdit(configuracion2);
+        namefield->setObjectName(QStringLiteral("namefield"));
+        namefield->setGeometry(QRect(70, 310, 251, 20));
+        accountbalancelbl_2 = new QLabel(configuracion2);
+        accountbalancelbl_2->setObjectName(QStringLiteral("accountbalancelbl_2"));
+        accountbalancelbl_2->setGeometry(QRect(70, 290, 251, 20));
+        accountbalancelbl_2->setAlignment(Qt::AlignCenter);
 
         retranslateUi(configuracion2);
 
@@ -70,12 +79,14 @@ public:
     void retranslateUi(QDialog *configuracion2)
     {
         configuracion2->setWindowTitle(QApplication::translate("configuracion2", "Dialog", 0));
-        accountbalancelbl->setText(QApplication::translate("configuracion2", "For a correct management, provide current balance", 0));
-        start->setText(QApplication::translate("configuracion2", "Start a correct finance management", 0));
-        accountnamefield->setText(QString());
         balancefield->setText(QString());
-        banknamelbl->setText(QApplication::translate("configuracion2", "Which bank does the account belong to?", 0));
-        accountnamelbl->setText(QApplication::translate("configuracion2", "If you wish, include the account number", 0));
+        accountnamefield->setText(QString());
+        accountnamelbl->setText(QApplication::translate("configuracion2", "If you wish, include an account number", 0));
+        accountbalancelbl->setText(QApplication::translate("configuracion2", "For a correct management, provide current balance", 0));
+        banknamelbl->setText(QApplication::translate("configuracion2", "Which bank does your account belong to?", 0));
+        start->setText(QApplication::translate("configuracion2", "Start a correct finance management", 0));
+        namefield->setText(QString());
+        accountbalancelbl_2->setText(QApplication::translate("configuracion2", "Who is the owner of the account?", 0));
     } // retranslateUi
 
 };

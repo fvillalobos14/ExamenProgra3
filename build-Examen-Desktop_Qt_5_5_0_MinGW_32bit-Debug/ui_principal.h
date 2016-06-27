@@ -38,7 +38,7 @@ public:
     {
         if (Principal->objectName().isEmpty())
             Principal->setObjectName(QStringLiteral("Principal"));
-        Principal->resize(337, 447);
+        Principal->resize(330, 447);
         centralwidget = new QWidget(Principal);
         centralwidget->setObjectName(QStringLiteral("centralwidget"));
         pushButton = new QPushButton(centralwidget);
@@ -57,7 +57,7 @@ public:
         Principal->setCentralWidget(centralwidget);
         menubar = new QMenuBar(Principal);
         menubar->setObjectName(QStringLiteral("menubar"));
-        menubar->setGeometry(QRect(0, 0, 337, 21));
+        menubar->setGeometry(QRect(0, 0, 330, 21));
         Principal->setMenuBar(menubar);
         statusbar = new QStatusBar(Principal);
         statusbar->setObjectName(QStringLiteral("statusbar"));

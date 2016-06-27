@@ -7,13 +7,17 @@ using namespace std;
 
 class Cuenta{
 protected:
-    int numeroCuenta;
+    //int numeroCuenta;
     string nombreDelBanco, nombre;
-    double saldo;
+    //double saldo;
 public:
     Cuenta();
     string getNombre();
     double getSaldo();
+    string getNombreBanco();
+    int getCuenta();
+    double saldo;
+    int numeroCuenta;
     void setSaldo(double);
     void depositar(double);
     virtual void retirar(double) = 0;

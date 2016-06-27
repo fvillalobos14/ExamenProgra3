@@ -36,6 +36,7 @@ public:
     QLabel *saldoactualhijo;
     QPushButton *depositar;
     QPushButton *retirar;
+    QPushButton *depositar2;
 
     void setupUi(QDialog *ManejodeCuentas)
     {
@@ -44,50 +45,55 @@ public:
         ManejodeCuentas->resize(390, 465);
         label = new QLabel(ManejodeCuentas);
         label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(-160, 30, 701, 20));
+        label->setGeometry(QRect(122, 40, 141, 20));
         label->setAlignment(Qt::AlignCenter);
         montofield = new QLineEdit(ManejodeCuentas);
         montofield->setObjectName(QStringLiteral("montofield"));
-        montofield->setGeometry(QRect(130, 90, 113, 20));
+        montofield->setGeometry(QRect(122, 90, 141, 20));
         label_2 = new QLabel(ManejodeCuentas);
         label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setGeometry(QRect(-160, 60, 701, 20));
+        label_2->setGeometry(QRect(122, 70, 141, 20));
         label_2->setAlignment(Qt::AlignCenter);
         label_3 = new QLabel(ManejodeCuentas);
         label_3->setObjectName(QStringLiteral("label_3"));
-        label_3->setGeometry(QRect(-160, 230, 701, 20));
+        label_3->setGeometry(QRect(122, 220, 141, 20));
         label_3->setAlignment(Qt::AlignCenter);
         label_4 = new QLabel(ManejodeCuentas);
         label_4->setObjectName(QStringLiteral("label_4"));
-        label_4->setGeometry(QRect(-160, 200, 701, 20));
+        label_4->setGeometry(QRect(122, 190, 141, 20));
         label_4->setAlignment(Qt::AlignCenter);
         retmontofield = new QLineEdit(ManejodeCuentas);
         retmontofield->setObjectName(QStringLiteral("retmontofield"));
-        retmontofield->setGeometry(QRect(130, 260, 113, 20));
+        retmontofield->setGeometry(QRect(122, 240, 141, 20));
         label_5 = new QLabel(ManejodeCuentas);
         label_5->setObjectName(QStringLiteral("label_5"));
-        label_5->setGeometry(QRect(-160, 340, 701, 20));
+        label_5->setGeometry(QRect(102, 310, 181, 20));
         label_5->setAlignment(Qt::AlignCenter);
         saldoactualpersonal = new QLabel(ManejodeCuentas);
         saldoactualpersonal->setObjectName(QStringLiteral("saldoactualpersonal"));
-        saldoactualpersonal->setGeometry(QRect(130, 370, 111, 16));
+        saldoactualpersonal->setGeometry(QRect(102, 340, 181, 20));
         QFont font;
         font.setPointSize(12);
         saldoactualpersonal->setFont(font);
+        saldoactualpersonal->setAlignment(Qt::AlignCenter);
         label_6 = new QLabel(ManejodeCuentas);
         label_6->setObjectName(QStringLiteral("label_6"));
-        label_6->setGeometry(QRect(-160, 390, 701, 20));
+        label_6->setGeometry(QRect(102, 380, 181, 20));
         label_6->setAlignment(Qt::AlignCenter);
         saldoactualhijo = new QLabel(ManejodeCuentas);
         saldoactualhijo->setObjectName(QStringLiteral("saldoactualhijo"));
-        saldoactualhijo->setGeometry(QRect(130, 420, 111, 16));
+        saldoactualhijo->setGeometry(QRect(102, 420, 181, 16));
         saldoactualhijo->setFont(font);
+        saldoactualhijo->setAlignment(Qt::AlignCenter);
         depositar = new QPushButton(ManejodeCuentas);
         depositar->setObjectName(QStringLiteral("depositar"));
-        depositar->setGeometry(QRect(150, 130, 75, 23));
+        depositar->setGeometry(QRect(122, 120, 141, 23));
         retirar = new QPushButton(ManejodeCuentas);
         retirar->setObjectName(QStringLiteral("retirar"));
-        retirar->setGeometry(QRect(150, 290, 75, 23));
+        retirar->setGeometry(QRect(122, 270, 141, 23));
+        depositar2 = new QPushButton(ManejodeCuentas);
+        depositar2->setObjectName(QStringLiteral("depositar2"));
+        depositar2->setGeometry(QRect(122, 150, 141, 23));
 
         retranslateUi(ManejodeCuentas);
 
@@ -105,8 +111,9 @@ public:
         saldoactualpersonal->setText(QApplication::translate("ManejodeCuentas", "L.0.00", 0));
         label_6->setText(QApplication::translate("ManejodeCuentas", "Current Balance (Child Account)", 0));
         saldoactualhijo->setText(QApplication::translate("ManejodeCuentas", "L.0.00", 0));
-        depositar->setText(QApplication::translate("ManejodeCuentas", "Deposit", 0));
+        depositar->setText(QApplication::translate("ManejodeCuentas", "Deposit in Personal Account", 0));
         retirar->setText(QApplication::translate("ManejodeCuentas", "Withdraw", 0));
+        depositar2->setText(QApplication::translate("ManejodeCuentas", "Deposit in Child Account", 0));
     } // retranslateUi
 
 };

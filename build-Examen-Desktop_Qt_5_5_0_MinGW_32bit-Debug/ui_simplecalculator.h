@@ -48,6 +48,7 @@ public:
     QLabel *label_6;
     QLineEdit *fourthEdit;
     QLineEdit *thirdEdit;
+    QPushButton *AverageButton_2;
     QMenuBar *menubar;
     QMenu *menuQuick_Calculator;
     QMenu *menuAbout;
@@ -83,10 +84,12 @@ public:
         label_2->setAlignment(Qt::AlignCenter);
         label_3 = new QLabel(centralwidget);
         label_3->setObjectName(QStringLiteral("label_3"));
-        label_3->setGeometry(QRect(82, 211, 59, 16));
+        label_3->setGeometry(QRect(140, 180, 111, 16));
+        label_3->setAlignment(Qt::AlignCenter);
+        label_3->setWordWrap(false);
         Result = new QLabel(centralwidget);
         Result->setObjectName(QStringLiteral("Result"));
-        Result->setGeometry(QRect(140, 210, 181, 21));
+        Result->setGeometry(QRect(140, 210, 111, 21));
         Result->setAlignment(Qt::AlignCenter);
         SumButton = new QPushButton(centralwidget);
         SumButton->setObjectName(QStringLiteral("SumButton"));
@@ -118,6 +121,10 @@ public:
         thirdEdit = new QLineEdit(centralwidget);
         thirdEdit->setObjectName(QStringLiteral("thirdEdit"));
         thirdEdit->setGeometry(QRect(47, 130, 113, 21));
+        AverageButton_2 = new QPushButton(centralwidget);
+        AverageButton_2->setObjectName(QStringLiteral("AverageButton_2"));
+        AverageButton_2->setEnabled(true);
+        AverageButton_2->setGeometry(QRect(260, 310, 115, 32));
         SimpleCalculator->setCentralWidget(centralwidget);
         menubar = new QMenuBar(SimpleCalculator);
         menubar->setObjectName(QStringLiteral("menubar"));
@@ -166,6 +173,7 @@ public:
         AverageButton->setText(QApplication::translate("SimpleCalculator", "AVERAGE", 0));
         label_5->setText(QApplication::translate("SimpleCalculator", "Third Value", 0));
         label_6->setText(QApplication::translate("SimpleCalculator", "Fourth Value", 0));
+        AverageButton_2->setText(QApplication::translate("SimpleCalculator", "FACTORIAL V1", 0));
         menuQuick_Calculator->setTitle(QApplication::translate("SimpleCalculator", "Quick Calculator", 0));
         menuAbout->setTitle(QApplication::translate("SimpleCalculator", "About", 0));
         toolBar->setWindowTitle(QApplication::translate("SimpleCalculator", "toolBar", 0));
